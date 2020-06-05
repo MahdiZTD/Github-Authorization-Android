@@ -7,20 +7,23 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".mvvm.mainactivity.MainActivity">
+        android:layout_height="match_parent">
 
-        <fragment
-            android:id="@+id/nav_host"
-            android:name="androidx.navigation.fragment.NavHostFragment"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_auth"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:defaultNavHost="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/side_padding"
+            android:background="@color/teal_600"
+            android:text="@string/authorize"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_medium"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:navGraph="@navigation/nav_graph" />
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
